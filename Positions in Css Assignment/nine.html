@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in Css assignment Q9</title>
+    <style>
+        .dropdown-menu{
+            display:none;
+            max-height: 160px;
+            overflow-y: scroll;
+            width:178px;
+            margin-top:0px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+        .hover-btn{
+            border: none;
+            background-color: #ff6666;
+            width: 220px;
+            font-size: 16px;
+            text-align: center;
+            padding: 10px;
+            font-weight: normal;
+        }
+        .scroll li{
+            list-style: none;
+            padding: 10px;
+        }
+        .hover-btn:hover + .dropdown-menu{
+            display: block;
+        }
+        .dropdown-menu:hover{
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll">
+        <button class="hover-btn">Hover To Veiw Option</button>
+        <ul class="dropdown-menu">
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+            <li>Option 5</li>
+            <li>Option 6</li>
+            <li>Option 7</li>
+            <li>Option 8</li>
+            <li>Option 9</li>
+        </ul>
+    </div>
+</body>
+</html>
